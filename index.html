@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexa's Tournament Registration</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .logo {
+      margin: 20px auto;
+      max-width: 250px;
+      display: block;
+    }
+    .form-container {
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      margin: 20px auto;
+      box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.6);
+    }
+    h2 {
+      color: #ffa500;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-size: 14px;
+      color: #ddd;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 15px;
+    }
+    button {
+      background: #ffa500;
+      color: #111;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff7b00;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25D366;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- লোগো -->
+  <img src="logo.png" alt="Tournament Logo" class="logo">
+  <!-- ফর্ম -->
+  <div class="form-container">
+    <h2>🏆 Tournament Registration Form 🎮</h2>
+    
+    <form name="tournamentForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <!-- Netlify Hidden Inputs -->
+      <input type="hidden" name="form-name" value="tournamentForm">
+      <p style="display:none;">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
+      <label>🔢 লিডারের নাম্বার:</label>
+      <input type="text" name="leader_number" required>
+      <label>🔜 লিডারের নাম:</label>
+      <input type="text" name="leader_name" required>
+      <label>🔠 টিমের নাম:</label>
+      <input type="text" name="team_name" required>
+      <label>♂️ প্লেয়ার ১ (গেম আইডি ও ইন-গেম নাম):</label>
+      <input type="text" name="player1" required>
+      <label>♂️ প্লেয়ার ২ (গেম আইডি ও ইন-গেম নাম):</label>
+      <input type="text" name="player2" required>
+      <label>♂️ প্লেয়ার ৩ (গেম আইডি ও ইন-গেম নাম):</label>
+      <input type="text" name="player3" required>
+      <label>♂️ প্লেয়ার ৪ (গেম আইডি ও ইন-গেম নাম):</label>
+      <input type="text" name="player4" required>
+      <label>🔆 টুর্নামেন্ট ফি বিকাশ নাম্বার:</label>
+      <input type="text" value="01789876473" readonly>
+      <label>💳 ফি প্রদান স্ক্রিনশট/লাস্ট ২ সংখ্যা:</label>
+      <input type="text" name="payment_info" required>
+      <button type="submit">রেজিস্ট্রেশন করুন</button>
+    </form>
+  </div>
+  <!-- WhatsApp বাটন -->
+  <a class="whatsapp" href="https://chat.whatsapp.com/KGezRegixGTFqCYX6FS4iT?mode=ems_copy_c" target="_blank">
+    📲 Join WhatsApp Group
+  </a>
+</body>
+</html>
